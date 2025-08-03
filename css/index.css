@@ -5,13 +5,19 @@ CSS HEX
 --thistle-2: #DFC9EDff;
 --thistle-3: #D1BBE2ff;
 --lilac: #CAB1DBff;
+
+--cherry-blossom-pink: #FDAEB1ff;
+--cherry-blossom-pink-2: #EBA9B7ff;
+--lilac: #CEA3BEff;
+--lilac-2: #B39CC6ff;
+--cool-gray: #9F96CBff;
 */
 
 body {
     /* Background */
     margin: 0;
     height: 100vh;
-    background-image: url('../img/background.jpg');
+    background-image: url('../img/background1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -23,26 +29,59 @@ body {
     align-items: center;
 }
 
-button {
-    color: #090909;
-    padding: 0.7em 1.7em;
-    font-size: 18px;
-    border-radius: 0.5em;
-    cursor: pointer;
-
-    background: #CAB1DBff;
-    border: 1px solid rgb(202, 180, 219);
-
-    transition: all 0.3s;
-
-    box-shadow: 6px 6px 12px rgb(161, 141, 174), -6px -6px 12px #DFC9EDff;
-    font-family: 'Fredoka One', cursive;
-
+main {
+    padding: 1em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(241, 189, 222);
+    height: auto;
+    width: auto;
+    border: 2.5px solid #264143;
+    border-radius: 1em;
+    box-shadow: 3px 4px 0px 1px rgb(140, 81, 188);
 }
 
-button:active {
-    color: #666;
-    box-shadow: inset 4px 4px 12px rgb(161, 141, 174), inset -4px -4px 12px #DFC9EDff;
+h1 {
+    color: #264143;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-family: 'Roboto Mono', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    color: #264143;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 1em;
+    margin-top: 0
+}
+
+button {
+    padding: 1em 6em;
+    margin: 1em 0;
+    font-size: 1em;
+    background: #FDAEB1ff;
+
+    border: 2.5px solid #264143;
+    border-radius: .5em;
+
+    font-weight: 800;
+    box-shadow: 3px 3px 0px 0px rgb(140, 81, 188);
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+button:hover {
+    opacity: .9;
+}
+
+/* click button */
+button:focus {
+    transform: translateY(4px);
+    box-shadow: 1px 2px 0px 0px rgb(140, 81, 188);
 }
 
 
