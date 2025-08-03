@@ -1,3 +1,12 @@
+/* 
+CSS HEX 
+--pale-purple: #EEDEF9ff;
+--thistle: #E4D1F1ff;
+--thistle-2: #DFC9EDff;
+--thistle-3: #D1BBE2ff;
+--lilac: #CAB1DBff;
+*/
+
 body {
     /* Background */
     margin: 0;
@@ -15,52 +24,27 @@ body {
 }
 
 button {
-    padding: .5em 1.5em;
-    font-size: 1.2em;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
     cursor: pointer;
-    border: none;
-    border-radius: 3rem;
 
-    /* ui */
-    background-color: transparent;
-    border: 4px solid transparent;
-    background-image:
-        linear-gradient(to bottom, rgb(201, 158, 234), rgb(225, 191, 248)),
-        linear-gradient(to bottom, rgb(225, 191, 248), rgb(201, 158, 234));
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-    
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #CAB1DBff;
+    border: 1px solid rgb(202, 180, 219);
+
+    transition: all 0.3s;
+
+    box-shadow: 6px 6px 12px rgb(161, 141, 174), -6px -6px 12px #DFC9EDff;
     font-family: 'Fredoka One', cursive;
 
-    /* click */
-    transition:
-        background-image 0.5s ease,
-        color 0.3s ease,
-        box-shadow 0.3s ease,
-        transform 0.15s ease;
-}
-
-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(75, 59, 101, 0.4);
-    background-image:
-        linear-gradient(to bottom, rgb(225, 191, 248), rgb(201, 158, 234)),
-        linear-gradient(to bottom, rgb(201, 158, 234), rgb(225, 191, 248));
 }
 
 button:active {
-    transform: scale(0.95);
-    box-shadow: 0 2px 4px rgba(75, 59, 101, 0.2);
+    color: #666;
+    box-shadow: inset 4px 4px 12px rgb(161, 141, 174), inset -4px -4px 12px #DFC9EDff;
 }
 
-/* 
-CSS HEX 
---pale-purple: #EEDEF9ff;
---thistle: #E4D1F1ff;
---thistle-2: #DFC9EDff;
---thistle-3: #D1BBE2ff;
---lilac: #CAB1DBff;
-*/
+
 
 
