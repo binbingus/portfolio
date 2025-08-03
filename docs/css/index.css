@@ -190,3 +190,40 @@ button:focus {
     right: 15%;
     animation-delay: .3s;
 }
+
+/* Responsive */
+/* Phone view */
+@media (max-width: 768px) {
+    main {
+        margin: 1em;
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 1em;
+    }
+
+    h2 {
+        font-size: 0.8em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 1em 3em;
+    }
+
+    .wrapper {
+        width: 100px;
+        height: 50px;
+    }
+
+    .circle,
+    .shadow {
+        width: 10px;
+        height: 10px;
+    }
+
+    .shadow {
+        top: 42px;
+    }
+}
