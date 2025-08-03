@@ -45,7 +45,7 @@ main {
 
 h1 {
     color: #264143;
-    font-size: 2em;
+    font-size: 1.8em;
     margin-top: 20px;
     margin-bottom: 0;
     font-family: 'Roboto Mono', sans-serif;
@@ -85,10 +85,11 @@ button:focus {
 }
 
 /* loader */
-#loader {
-    display: none;
+.loader {
+    visibility: hidden;
     position: fixed;
     inset: 0;
+    opacity: .8;
     background-color: rgba(0, 0, 0, 0.95);
     z-index: 9999;
     display: flex;
@@ -97,7 +98,7 @@ button:focus {
 }
 
 /* When shown by JS, override display:none */
-#loader:not([hidden]) {
+.loader:not([hidden]) {
     display: flex;
 }
 
