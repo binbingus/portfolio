@@ -28,6 +28,9 @@ main a {
     text-decoration: none;
     color: white;
 
+    padding: 1em;
+    border-radius: 1em;
+
     width: 8vw;
     min-width: 8vw;
     max-width: 12vw;
@@ -37,7 +40,7 @@ main a {
 }
 
 main a:hover {
-    transform: scale(1.1);
+    background-color: rgba(201, 182, 202, 0.4);
 }
 
 main img {
