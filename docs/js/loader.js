@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const btn = document.getElementById('start-btn');
+    const btn = document.getElementById('loading-entry');
     const loader = document.getElementById('loader');
     if (btn && loader) {
         btn.addEventListener('click', function() {

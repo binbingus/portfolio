@@ -34,7 +34,7 @@
 
     <main>    
         <!-- About Me -->
-        <a href="aboutme.html" class="aboutme">
+        <a href="aboutme.html" class="aboutme" id="loading-entry">
             <img src="img/user.png" alt="About Me">
             <span>About Me</span>
         </a>
@@ -46,8 +46,20 @@
         </a>
     </main>
 
-    <script src="js/hour.js"></script>
+    <!-- loader -->
+    <div class="loader" id="loader">
+        <div class="wrapper">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+            <div class="shadow"></div>
+        </div>
+    </div>
 
+    <script src="js/hour.js"></script>
+    <script src="js/loader.js"></script>
 </body>
 
 </html>
