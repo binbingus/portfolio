@@ -91,15 +91,20 @@ nav {
     left: 0;
     width: 100%;
     height: 40px;
-    background: rgb(113, 85, 137);
+    padding: 0 15px;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
     box-sizing: border-box;
-    color: white;
-    font-size: 0.9em;
     z-index: 1000;
+
+    background: rgb(113, 85, 137);
+    color: white;
+
+    font-size: 0.9em;
+    font-family: 'Roboto Mono', sans-serif;
+    text-transform: uppercase;
 }
 
 nav div {
