@@ -29,6 +29,11 @@ body {
     align-items: center;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 main {
     padding: 1em 2em;
     display: flex;
@@ -205,6 +210,10 @@ button:focus {
 
     h2 {
         font-size: 0.8em;
+    }
+
+    a{
+        color: inherit;
     }
 
     button {
