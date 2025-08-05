@@ -198,7 +198,7 @@ button:focus {
 
 /* Responsive */
 /* Phone view */
-@media (max-width: 500px) {
+@media (max-width: 768) {
     main {
         margin: 1em;
         width: 95%;

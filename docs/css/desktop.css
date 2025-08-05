@@ -122,3 +122,109 @@ nav img {
     opacity: 0.8;
     filter: invert(1) brightness(1.2) contrast(1.1);
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    /* Make the main grid more phone-like */
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2vw;
+        padding: 4vw;
+        height: auto;
+    }
+
+    main a {
+        width: 20vw;
+        min-width: 20vw;
+        max-width: 24vw;
+        aspect-ratio: 1;
+        padding: 1.5vw;
+    }
+
+    main img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    main span {
+        font-size: 3vw;
+    }
+
+    /* Move nav text (left) and time (right) to top on phones */
+    nav {
+        position: fixed;
+        top: 0;
+        bottom: unset;
+        height: 8vw;
+        padding: 2vw 3vw;
+        font-size: 2.7vw;
+        justify-content: right;
+        padding-right: 10vw;
+    }
+
+    nav div {
+        flex-direction: row;
+        align-items: right;
+    }
+
+    nav div a img {
+        width: 4vw;
+        height: 4vw;
+    }
+
+
+    /* Move GitHub and LinkedIn apps to the bottom of the screen */
+    .github {
+        position: fixed;
+        top: 2vw;
+        right: 8vw;
+        z-index: 999;
+        gap: 2vw;
+        
+    }
+
+    .linkedin {
+        position: fixed;
+        top: 2vw;
+        left: 2vw;
+        z-index: 999;
+        gap: 2vw;
+        width: 5vw;
+        height: 5vw;
+    }
+
+    #wifi{
+        position: fixed;
+        top: 2vw;
+        left: 2vw;
+        z-index: 999;
+        gap: 2vw;
+    }
+
+    #battery {
+        position: fixed;
+        right: 3vw;
+        z-index: 999;
+        gap: 2vw;
+        width: 5vw;
+        height: 5vw;
+    }
+
+    #clock {
+        position: fixed;
+        top: 2vw;
+        left: 7vw;
+        z-index: 999;
+        gap: 2vw;
+    }
+    
+    #sound, #navtext{
+        display: none;
+    }
+}
