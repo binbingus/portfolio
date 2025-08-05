@@ -1,7 +1,79 @@
 body {
+    margin: 0;
+    height: 100vh;
     background-image: url('../img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    font-family: sans-serif;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+    padding: 20px;
+    height: calc(100vh - 40px);
+    box-sizing: border-box;
+}
+
+main a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    width: 80px;
+    margin: auto;
+    transition: transform 0.2s;
+}
+
+main a:hover {
+    transform: scale(1.1);
+}
+
+main img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 5px;
+}
+
+main span {
+    font-size: 0.8em;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 2px 4px;
+    border-radius: 4px;
+    word-wrap: break-word;
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(20, 20, 20, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 0.9em;
+    z-index: 1000;
+}
+
+nav div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav img {
+    height: 24px;
+    width: 24px;
 }
