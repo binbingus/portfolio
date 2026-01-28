@@ -92,7 +92,7 @@ a:focus {
     gap: 2rem;
     margin-bottom: 3rem;
     flex-wrap: wrap;
-    /* wrap on smaller screens */
+    text-align: center;
 }
 
 .profile-pic {
