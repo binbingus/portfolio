@@ -5,7 +5,7 @@
     --off-white: #F2F2F2;
     --bone-white: #ffffff;
     --deep-black: #0D0D0D;
-    --accent-pink: #F2C2CB;
+    --accent-pink: #b43d43;
     --shadow-color: rgba(58, 5, 8, 0.2);
 }
 
@@ -87,7 +87,7 @@ ul {
     margin-right: calc(-50vw + 50%);
     margin-bottom: 0;
     
-    background: var(--burgundy-main);
+    background: var(--accent-pink);
     color: var(--off-white);
     padding: 1.5rem 0; 
     box-sizing: border-box;
