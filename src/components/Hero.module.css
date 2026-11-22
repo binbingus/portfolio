@@ -1,0 +1,133 @@
+.hero {
+  background: var(--burgundy);
+  color: #fff;
+  padding: 1.5rem var(--gutter) 0;
+  overflow: hidden;
+}
+
+.inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: end;
+  gap: 2rem;
+  min-height: 30rem;
+}
+
+.text {
+  align-self: center;
+  padding: 2rem 0 3rem;
+}
+
+.text h1 {
+  font-size: clamp(3rem, 8vw, 6.25rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  max-width: 8ch;
+}
+
+.role {
+  margin-top: 1.75rem;
+  font-size: 1.05rem;
+  max-width: 34rem;
+}
+
+.lead {
+  margin-top: 0.75rem;
+  max-width: 34rem;
+  color: #e8cfd0;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 500;
+  text-decoration: none;
+  border: 2px solid #fff;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.solid {
+  background: #fff;
+  color: var(--burgundy);
+}
+
+.solid:hover {
+  background: var(--tint);
+}
+
+.line:hover {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.photo {
+  align-self: end;
+  justify-self: center;
+  width: 100%;
+  max-width: 26rem;
+  background: var(--rose);
+  border-radius: 999px 999px 0 0;
+  overflow: hidden;
+}
+
+/* The portrait has a white background: multiply turns it into the arch colour. */
+.photo img {
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply;
+}
+
+/* One entrance, on load only. The animation sits on the img itself so the
+   blend mode is not isolated by an animated parent. */
+@media (prefers-reduced-motion: no-preference) {
+  .text > * {
+    animation: rise 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+  }
+  .text > :nth-child(2) {
+    animation-delay: 0.08s;
+  }
+  .text > :nth-child(3) {
+    animation-delay: 0.16s;
+  }
+  .text > :nth-child(4) {
+    animation-delay: 0.24s;
+  }
+  .photo img {
+    animation: fade 1s 0.15s ease both;
+  }
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .inner {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+  .text {
+    padding-bottom: 1rem;
+  }
+  .photo {
+    max-width: 17rem;
+  }
+}

@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.75rem;
+  font-size: 0.85rem;
+}
+
+.nav a {
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.nav a:hover {
+  border-bottom-color: #fff;
+}
+
+@media (max-width: 800px) {
+  .nav {
+    justify-content: flex-start;
+  }
+}

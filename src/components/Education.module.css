@@ -1,0 +1,51 @@
+.timeline {
+  position: relative;
+  margin-left: 0.5rem;
+  border-left: 2px solid var(--line);
+}
+
+.step {
+  position: relative;
+  padding: 0 0 2rem 1.75rem;
+}
+
+.step:last-child {
+  padding-bottom: 0;
+}
+
+.step::before {
+  content: '';
+  position: absolute;
+  left: -0.5rem;
+  top: 0.3rem;
+  width: 0.85rem;
+  height: 0.85rem;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--muted);
+}
+
+.current::before {
+  background: var(--red);
+  border-color: var(--red);
+}
+
+.years {
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.current .years {
+  color: var(--red);
+  font-weight: 500;
+}
+
+.step h3 {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin: 0.15rem 0 0.25rem;
+}
+
+.place {
+  color: var(--muted);
+}

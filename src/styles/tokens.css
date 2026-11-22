@@ -1,0 +1,17 @@
+:root {
+  --burgundy: #6e0b10;
+  --burgundy-deep: #4a070b;
+  --red: #c0262d;
+  --rose: #ecc9c9;
+  --ink: #1c1517;
+  --muted: #675a5c;
+  --paper: #fbf9f9;
+  --tint: #f1e5e5;
+  --line: #e4d6d7;
+
+  --font-display: 'Bricolage Grotesque', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Roboto Mono', ui-monospace, Menlo, monospace;
+
+  --gutter: clamp(1.25rem, 6vw, 5rem);
+  --max-width: 68rem;
+}
