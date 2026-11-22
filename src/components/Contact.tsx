@@ -1,12 +1,15 @@
 import { profile } from '../data/profile'
+import { useI18n } from '../i18n'
 import styles from './Contact.module.css'
 
 export default function Contact() {
+  const { t } = useI18n()
+
   return (
     <footer id="contact" className={styles.contact}>
       <div className={styles.inner}>
-        <h2>Let’s talk</h2>
-        <p>{profile.availability}</p>
+        <h2>{t.contact.title}</h2>
+        <p>{t.contact.availability}</p>
         <a className={styles.mail} href={`mailto:${profile.email}`}>
           {profile.email}
         </a>
