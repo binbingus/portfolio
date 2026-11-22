@@ -11,7 +11,6 @@ export default function Hero() {
         <div className={styles.text}>
           <h1>{profile.name}</h1>
           <p className={styles.role}>{profile.role}</p>
-          <p className={styles.lead}>{profile.intro}</p>
           <div className={styles.actions}>
             <a className={`${styles.btn} ${styles.solid}`} href="#projects">
               See my projects
